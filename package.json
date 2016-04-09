@@ -1,0 +1,22 @@
+{
+  "name": "climb",
+  "version": "1.0.0",
+  "description": "...it goes up.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1forh/climb.git"
+  },
+  "author": "Zachary Minner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1forh/climb/issues"
+  },
+  "homepage": "https://github.com/1forh/climb#readme",
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
