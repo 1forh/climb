@@ -1,4 +1,4 @@
-'use strict';
++'use strict';
 
 var Climb = function() {
 
@@ -78,11 +78,13 @@ var Climb = function() {
 
 };
 
-var climb = new Climb();
+var climb_init = function(icon_color, background, side, x, y, speed, smooth) {
+  var climb = new Climb();
 
-climb.create('white');
-climb.display(800);
-climb.position(0, 25, 'right');
-climb.style('teal', 'right');
-climb.climb(500);
+  climb.create(icon_color);
+  climb.display(speed);
+  climb.position(x, y, side);
+  climb.style(background, side);
+  climb.climb(smooth);
+};
 
