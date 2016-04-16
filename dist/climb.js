@@ -35,6 +35,7 @@ var Climb = function() {
   this.style = function(background, side) {
 
     var left_box = {
+      'z-index': '9001',
       'display': 'none',
       'padding': '1em 1em 1em 1.3em',
       'background-color': background,
@@ -44,8 +45,9 @@ var Climb = function() {
     };
 
     var right_box = {
+      'z-index': '9001',
       'display': 'none',
-      'padding': '1em 1.3em 1em 1em',
+      'padding': '0.7em 1em 0.7em 0.7em',
       'background-color': background,
       'border-top-left-radius': '10px',
       'border-bottom-left-radius': '10px',
@@ -53,8 +55,8 @@ var Climb = function() {
     };
 
     var icon = {
-      'width': '30px',
-      'height': '30px'
+      'width': '20px',
+      'height': '20px'
     };
 
     if(side == 'left') {
