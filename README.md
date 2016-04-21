@@ -4,7 +4,7 @@
 
 The script adds a button to the document that will return a user to the top of the current page. 
 
-Add to the bottom of the document. Modfiy styles within `climb_init();`.
+Download repository and add `climb.min.js` to the bottom of the document. Modfiy styles within `climb_init();`.
     
     <div id="climb"></div>
 
