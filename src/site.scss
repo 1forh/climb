@@ -97,3 +97,15 @@ footer {
   top: 0.9em;
   left: -10em;
 }
+
+@media (max-width: 963px) {
+  #climb::before {
+    content: '';
+  }
+}
+
+@media (max-width: 463px) {
+  main  {
+    width: 90%;
+  }
+}
