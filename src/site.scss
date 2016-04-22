@@ -1,0 +1,99 @@
+$primary-color: #3F51B5;
+$header-color: #212121;
+$font-color: #424242;
+$code-color: rgba(0, 0, 0, 0.75);
+
+$white: #fff;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  color: $font-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+p code {
+  padding: 0.2em 0.5em;
+  color: #fff;
+  background-color: $code-color;
+}
+
+pre {
+  margin: 4em 0;
+  padding: 2em 0;
+  color: #fff;
+  background-color: $code-color;
+  overflow: auto;
+}
+
+code {
+
+}
+
+main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+
+main > header {
+  flex: 1;
+  padding: 1em 0;
+
+  h1 {
+    font-size: 5.0em;
+  }
+
+  h4 {
+
+  }
+}
+
+section {
+  padding: 3em 0;
+
+  header {
+    h2 {
+
+    }
+  }
+
+  p {
+
+  }
+}
+
+footer {
+  padding: 1em 0;
+
+  p {
+    margin: 1em 0 0;
+  }
+}
+
+#climb::before {
+  content: 'This is it right here...';
+  position: absolute;
+  top: 0.9em;
+  left: -10em;
+}

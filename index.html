@@ -1,31 +1,102 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>climb.js</title>
-        <meta name="description" content="...it goes up">
-    </head>
-    <body>
+  <title>Climb.js</title>
+  <meta name="description" content="...it goes up">
 
-    <header style="background-color: orange;">header</header>
+  <link rel="icon" type="image/png" href="favicon.png">
 
-    <div style="padding:500px 0; background-color: #ccc;"></div>
-    <div style="padding:500px 0; background-color: #010101;"></div>
-    <div style="padding:500px 0; background-color: #ccc;"></div>
-    <div style="padding:500px 0; background-color: #010101;"></div>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="dist/site.css">
 
-    <div id="climb"></div>
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="dist/climb.min.js"></script>
+    ga('create','UA-59393507-13','auto');
+    ga('send','pageview');
+  </script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1><strong>Climb.js</strong></h1>
+      <h4>...it goes up.</h4>
+      <a class="github-button" href="https://github.com/1forh/climb/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download 1forh/climb on GitHub">Download</a>
+      <a class="github-button" href="https://github.com/1forh/climb" data-style="mega" label="View 1forh/climb on GitHub">View Repo</a>
+    </header>
 
-    <script>
-      // icon color, background color, side of window, x-coordinate, y-coordinate, window height to display, animation speed
-      climb_init('white', '#3F51B5', 'right', 0, 100, 800, 500);
-    </script>
+    <section>
+      <header>
+       <h2><strong>What does it actually do?</strong></h2>
+      </header>
+       <p>Climb.js adds a fixed button to the document, fading in and out at certain scroll heights, that will return a user to the top of the current page when clicked.</p>
+    </section>
 
-    </body>
+    <section>
+      <header>
+       <h2><strong>How do I make it work?</strong></h2>
+      </header>
+      <p>It's pretty easy to use. Just add an element with <code>#climb</code> to your existing HTML and include the JavaScript file after <a href="https://jquery.com/" target="_blank">jQuery</a> at the bottom of your document.</p>
+      <p>To call the Climb.js function use <code>climb_init();</code></p>
+  <pre>
+    <code>
+      &lt;div id="climb">&lt;/div>
+
+      &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      &lt;script src="scripts/climb.min.js"></script>
+
+      &lt;script>
+        climb_init('white', '#3F51B5', 'right', 0, 100, 800, 500);
+      &lt;/script>
+
+    &lt;/body>
+    &lt;/html>
+    </code>
+  </pre>
+    <p>You can choose the color of the icon, the background color, which side of the window to display the button, x-coordinate, y-coordinate, the window height at which to display the button, and how long it takes to return to the top of the page.</p>
+    </section>
+
+    <section>
+      <header>
+       <h2><strong>Why?</strong></h2>
+      </header>
+       <p>The button helps users to quickly return to the top of the page. This is especially useful for really long, one-page websites.</p>
+    </section>
+
+    <section>
+      <header>
+        <h2><strong>Where can I get it?</strong></h2>
+      </header>
+      <p>Climb.js is available under the MIT license on GitHub. Below is a download link and a link to view the repository.</p>
+      <a class="github-button" href="https://github.com/1forh/climb/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download 1forh/climb on GitHub">Download</a>
+      <a class="github-button" href="https://github.com/1forh/climb" data-style="mega" label="View 1forh/climb on GitHub">View Repo</a>
+    </section>
+
+    <footer>
+      <a class="github-button" href="https://github.com/1forh/climb" data-icon="octicon-star" data-style="mega" data-count-href="/1forh/climb/stargazers" data-count-api="/repos/1forh/climb#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 1forh/climb on GitHub">Star</a>
+      <p>Created by <a href="https://github.com/1forh" target="_blank">Zachary Minner</a>.</p>
+    </footer>
+  </main>
+
+  <div id="climb"></div>
+
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="dist/climb.min.js"></script>
+
+  <script>
+    // icon color, background color, side of window, x-coordinate, y-coordinate, window height to display, animation speed
+    climb_init('white', '#3F51B5', 'right', 0, 100, 100, 500);
+  </script>
+
+</body>
 </html>
