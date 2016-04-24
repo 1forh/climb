@@ -95,6 +95,7 @@ footer {
 }
 
 .github-button {
+  display: inline-block;
   margin-right: 0.4em;
   padding: 0.7em 1.1em;
   font-weight: bold;
@@ -109,14 +110,25 @@ footer {
 }
 
 @media (max-width: 963px) {
+  main {
+    padding: 1em;
+  }
   #climb::before {
     content: '';
   }
 }
 
+@media (max-width: 574px) {
+  .github-button {
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
 @media (max-width: 463px) {
   main  {
-    width: 90%;
+    width: 85%;
   }
 
   h1 {
