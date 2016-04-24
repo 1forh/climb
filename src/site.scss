@@ -94,6 +94,20 @@ footer {
   left: -10em;
 }
 
+.github-button {
+  margin-right: 0.4em;
+  padding: 0.7em 1.1em;
+  font-weight: bold;
+  background-color: #eee;
+  border-radius: 1em;
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
+}
+
+.github-button:hover {
+  opacity: 1;
+}
+
 @media (max-width: 963px) {
   #climb::before {
     content: '';
