@@ -41,7 +41,8 @@ var Climb = function() {
       'background-color': background,
       'border-top-right-radius': '10px',
       'border-bottom-right-radius': '10px',
-      'cursor': 'pointer'
+      'cursor': 'pointer',
+      'outline': 'none'
     };
 
     var right_box = {
@@ -51,7 +52,8 @@ var Climb = function() {
       'background-color': background,
       'border-top-left-radius': '10px',
       'border-bottom-left-radius': '10px',
-      'cursor': 'pointer'
+      'cursor': 'pointer',
+      'outline': 'none'
     };
 
     var icon = {
